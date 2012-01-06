@@ -1,0 +1,7 @@
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\obj\Debug\ResolveAssemblyReference.cache
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\bin\ShivamITsolutions.dll
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\bin\ShivamITsolutions.pdb
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\bin\EntityFramework.dll
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\bin\EntityFramework.xml
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\obj\Debug\ShivamITsolutions.dll
+D:\SHIVAM\ShivamITsolutions\ShivamITsolutions\obj\Debug\ShivamITsolutions.pdb

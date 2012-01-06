@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace ShivamITsolutions.Controllers
+{
+    public class ServicesController : Controller
+    {
+        //
+        // GET: /Services/
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+
+        //
+        // GET: /Services/
+
+        public ActionResult ConsultancyService()
+        {
+            return View();
+        }
+
+        public ActionResult BusinessIT()
+        {
+            return View();
+        }
+        
+
+    }
+}

@@ -1,0 +1,165 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+
+<link href="../../Content/screen.css" rel="stylesheet" type="text/css" />
+<script src="../../Scripts/easySlider1.7.js" type="text/javascript"></script>
+
+<style type="text/css">
+ul li a img {
+border:0px;
+}
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#slider").easySlider({
+            auto: true,
+            continuous: true
+        });
+
+        $(".featurehome2 p").mouseenter(function () {
+            $(this).animate({ opacity: 1.0 }, "slow");
+        }).mouseout(function () {
+            $(this).animate({ opacity: 0.8 }, "slow");
+        });
+
+    });
+
+    $(function () {
+        $("input:submit, a, button", ".demo").button();
+        $("a", ".demo").click(function () { return false; });
+        $("#tabs").tabs({
+            event: "mouseover"
+        });
+    });
+
+
+</script>
+
+@section featured {
+<section class="featured">    
+    <div class="content-wrapper">
+    <hgroup class="title">
+            <h1>@ViewBag.Title to </h1>
+            <h2 style="text-decoration:underline">@ViewBag.Message</h2>
+            <h3> &nbsp;An ISO Certified</h3>
+        </hgroup>
+    <div id="slider">
+			<ul>				
+				<li><a href="#"><img src="@Url.Content("~/images/slider_photo.png")" alt="Css Template Preview" /></a></li>
+				<li><a href="#"><img src="@Url.Content("~/images/slider_photo2.jpg")" alt="Css Template Preview" /></a></li>
+				<li><a href="#"><img src="@Url.Content("~/images/slider_photo3.jpg")" alt="Css Template Preview" /></a></li>
+				<li><a href="#"><img src="@Url.Content("~/images/slider_photo.png")" alt="Css Template Preview" /></a></li>
+				<li><a href="#"><img src="@Url.Content("~/images/slider_photo4.jpg")" alt="Css Template Preview" /></a></li>			
+			</ul>
+	</div>
+    </div>
+</section>
+}
+
+<section class="features">
+    <section class="featurehome">        
+        <h3  style="Background-color: #006432">MOBILE/TABLET APPLICATION</h3>
+        <p>
+            From an idea to its implementation, Our Mobile &amp; Tablet Apps development team can give shape to any out-of-box idea and ensure its 
+            success through enhanced functionality.   
+        </p>
+        <p> We have developed interactive, <em>intuitive and expressive</em> mobile applications across all plateforms. 
+             We helps Companies make a marked difference in mobile phones usage iPhone, Android, WM apps & Tablets. </p>
+        <p> Our proven experience and continuously evolving expertise allows us to easily build, publish & share full-fledged mobile websites that are 
+             guaranteed to work fine on any mobile phone.           
+        </p>
+        <div class="demo"><a href="" title="MOBILE/TABLET APPLICATION DEVELOPMENT" style="Color:White;">Read More...</a> </div>
+    </section>
+    <section class="featurehome">
+        <h3>WEB APPLICATION</h3>
+        <p>
+            We possess a well-defined approach towards web application development and are highly proficient in developing 
+            efficient custom solution for companies across diverse business domains, irrespective of their size. 
+            </p>
+        <p>We offers <b>Rich Internet Application development</b> for companies that want cutting edge applications for streamlining business 
+            processes and improving <em>profitability</em>.  
+        </p>
+        <p>
+            We strive to connect your business to the world of internet through static & dynamic website, <em>Presentation oriented web application</em>, CMS driven website, 
+            eCommerce solutions, hosting and domains.           
+        </p>
+        <div class="demo"><a href="" title="WEB APPLICATION DEVELOPMENT" style="Color:White;">Read More...</a></div> 
+    </section>
+    <section class="featurehome">
+        <h3>SOFTWARE SOLUTIONS</h3>
+        <p>
+            We’ll help you towards making completely new product or extend one of your existing products.</p>
+        <p>
+            To remain competitive, your software products and solutions might need to be designed to new industries, enhanced for better performance, 
+            or migrated to new platforms. We have helped clients be first to market with new software and many clients to reach new markets, extend product 
+            lifecycles and improve product performance. 
+        </p>
+        <p>
+            Our core expertize is to build <em>Custom ERP, CRM, Financial, Business Process Automation Software Development Solutions and its Improvements.</em>
+        </p>
+        <div class="demo"><a href="" title="CUSTOM SOFTWARE SOLUTIONS" style="Color:White;">Read More...</a></div>
+    </section>
+</section>
+  
+<div class="clear"></div>
+        
+    <section class="features">
+    <section class="featurehome2">
+        <img src="@Url.Content("~/images/who-we-are.png")" alt="ASP.NET" />
+        <h3>WHO WE ARE ?</h3>
+        <p class="p-first">
+            SHIVAM IT SOLUTION is a India-based design firm specializing in complex web application design & development.
+            Whether you're new to ASP.NET or an experienced developer, the <a href="http://asp.net" title="ASP.NET Website">ASP.NET website</a> 
+            is your source for news, training, downloads, and support.
+        </p>
+    </section>
+    <section class="featurehome2">
+        <img src="@Url.Content("~/images/our_process.png")" alt="NuGet" />
+
+        <h3>OUR PROCESS</h3>
+        <p class="p-second">
+            SHIVAM IT is dedicated to provide highest quality Software Development Services to its client. We always follow SDLC (Software Development Life Cycle) process for developing standard applications. Although, for Custom Web Application Development, it can differ a little bit from standard SDLC depending on the client's requirements. We try to enforce traceable, process work model at every stage of Application Development process in order to develop secure, scalable and robust applications.
+        </p>
+    </section>
+    <section class="featurehome2">
+        <img src="@Url.Content("~/images/WHYCHOOSEUS.png")" alt="Hosting" />
+        <h3>WHY CHOOSE US ?</h3>
+        <p class="p-third">
+            We offer full service mobile, e-commerce, web and software development solutions for a range of small to mid-size companies. Our development packages empower clients - offering a competitive advantage that enables companies to focus on core activities rather than identifying website requirements and managing the development process.           
+        </p>
+    </section>
+</section>
+
+<div class="clear"></div>
+
+<h2>What Makes Us Stand Out</h2>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">World Class Service</a></li>
+		<li><a href="#tabs-2">Affordable Prizes</a></li>
+		<li><a href="#tabs-3">Customer Focus</a></li>
+        <li><a href="#tabs-4">Technical Efficiency</a></li>
+		<li><a href="#tabs-5">Great Support</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>World Class Service, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+	</div>
+	<div id="tabs-2">
+		<p>Affordable Prizes, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+	</div>
+	<div id="tabs-3">
+		<p>Customer Focus, est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+	</div>
+    <div id="tabs-4">
+		<p>Technical Efficiency, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+	</div>
+	<div id="tabs-5">
+		<p>Great Support, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+	</div>	
+</div>
+
